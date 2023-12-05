@@ -21,7 +21,7 @@ A console-based Bank Management System implemented in C++. This project allows u
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/Bank-Management-System-CPP.git
+   git clone https://github.com/AkashSasikumar47/Bank-Management-System-CPP.git
 
 2. Compile the code:
    ```bash
