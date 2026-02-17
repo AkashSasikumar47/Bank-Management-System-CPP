@@ -22,6 +22,13 @@ public:
         std::getline(std::cin, accountHolderName);
         std::cout << "Enter Initial Balance: ";
         std::cin >> balance;
+
+        if (balance < 0)
+        {
+            std::cout << "Invalid balance! Setting balance to 0.\n";
+            balance = 0;
+        }
+
         std::cout << "Account created successfully!\n";
     }
 
@@ -31,6 +38,13 @@ public:
         double amount;
         std::cout << "Enter the amount to deposit: ";
         std::cin >> amount;
+
+        if (amount <= 0)
+        {
+            std::cout << "Invalid amount! Deposit amount must be positive.\n";
+            return;
+        }
+
         balance += amount;
         std::cout << "Amount deposited successfully!\n";
     }
@@ -41,6 +55,13 @@ public:
         double amount;
         std::cout << "Enter the amount to withdraw: ";
         std::cin >> amount;
+
+        if (amount <= 0)
+        {
+            std::cout << "Invalid amount! Withdrawal amount must be positive.\n";
+            return;
+        }
+
         if (amount > balance)
         {
             std::cout << "Insufficient balance!\n";
@@ -108,11 +129,9 @@ int main()
             break;
         case 2:
             account.deposit();
-            account.updateFile();
             break;
         case 3:
             account.withdraw();
-            account.updateFile();
             break;
         case 4:
             account.displayAccount();

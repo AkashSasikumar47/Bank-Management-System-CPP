@@ -1,0 +1,26 @@
+# Compiled executables
+main
+bank
+bank_management_system
+*.out
+*.exe
+
+# Debug symbols
+*.dSYM/
+
+# macOS
+.DS_Store
+
+# Data files
+accounts.txt
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Object files
+*.o
+*.obj

@@ -1,36 +1,30 @@
-# Bank Management System (C++)
+# Bank Management System
 
-A console-based Bank Management System implemented in C++. This project allows users to perform basic banking operations such as creating accounts, depositing and withdrawing money, and viewing account details. The account data is stored in a file to simulate a persistent storage mechanism.
+A simple console-based banking application in C++.
 
 ## Features
 
-- **Create Account:** Users can create new bank accounts by providing account details.
-- **Deposit and Withdraw:** Perform deposit and withdrawal transactions for existing accounts.
-- **View Account Details:** Display account information, including the account number, account holder name, and balance.
-- **Persistent Storage:** Account data is stored in a file for data persistence between program runs.
+- Create new bank accounts
+- Deposit and withdraw money
+- View account details
+- Save accounts to file
 
-## Getting Started
+## Quick Start
 
-### Prerequisites
+```bash
+# Clone the repository
+git clone https://github.com/AkashSasikumar47/Bank-Management-System-CPP.git
+cd Bank-Management-System-CPP
 
-- C++ compiler (e.g., g++)
-- Any compatible C++ development environment
+# Compile and run
+g++ main.cpp -o bank
+./bank
+```
 
-### Usage
+## Requirements
 
-1. Clone the repository:
+- C++ compiler (g++ or clang++)
 
-   ```bash
-   git clone https://github.com/AkashSasikumar47/Bank-Management-System-CPP.git
+## License
 
-2. Compile the code:
-   ```bash
-   g++ main.cpp -o bank_management_system
-   
-3. Run the executable:
-   ```bash
-   ./bank_management_system
-
-## Contributing
-
-Contributions are welcome! If you find any issues or have enhancements to suggest, feel free to open an issue or create a pull request.
+MIT License - see [LICENSE](LICENSE) file for details.
